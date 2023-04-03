@@ -2,26 +2,26 @@ import 'package:flutter/material.dart';
 
 void main() {
   MaterialApp app = MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.deepPurple), //Questão 1;
+      theme: ThemeData(primarySwatch: Colors.black), //Questão 1;
       home: Scaffold(
         appBar: AppBar(title: Text("Meu app")),
         body: Center(
             child: Column(children: [
-          Text(
+          Text( //Questão 2;
             "Apenas começando...",
             style: TextStyle(
               color: Colors.red,
               fontWeight: FontWeight.bold,
             ),
           ),
-          Text(
+          Text( //Questão 2;
             "No meio...",
             style: TextStyle(
               color: Colors.blue,
               fontWeight: FontWeight.bold,
             ),
           ),
-          Text(
+          Text( //Questão 2;
             "Terminando...",
             style: TextStyle(
               color:Colors.green,
