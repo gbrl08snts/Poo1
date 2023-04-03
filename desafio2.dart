@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   MaterialApp app = MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.black), //Questão 1;
+      theme: ThemeData(primarySwatch: Colors.red), //Questão 1;
       home: Scaffold(
         appBar: AppBar(title: Text("Meu app")),
         body: Center(
