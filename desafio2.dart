@@ -1,74 +1,44 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Meu App',
+  MaterialApp app = MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Meu App'),
-          backgroundColor: Colors.deepOrange,
-        ),
+        appBar: AppBar(title: Text("Meu app")),
         body: Center(
-          child: Column(
-            children: [
-              Text(
-                "Apenas começando...",
-                style: TextStyle(
-                  color: Colors.red,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                "No meio...",
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                "Terminando...",
-                style: TextStyle(
-                  color: Colors.green,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
+            child: Column(children: [
+          Text(
+            "Apenas começando...",
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green),
           ),
-        ),
+          Text(
+            "No meio, mas agora em negrito!",
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+          ),
+          Text(
+            "Terminando...",
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+          )
+        ])),
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.deepOrange,
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white70,
+          selectedItemColor: Colors.green,
+          unselectedItemColor: Colors.green,
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              label: 'Página Inicial',
+              label: "Página inicial",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.favorite),
-              label: 'Favoritos',
+              icon: Icon(Icons.search),
+              label: "Buscar",
             ),
             BottomNavigationBarItem(
-              icon: IconButton(
-                icon: Icon(Icons.settings),
-                onPressed: () {
-                  print('Botão de ícone pressionado!');
-                },
-              ),
-              label: 'Configurações',
+              icon: Icon(Icons.person),
+              label: "Perfil",
             ),
           ],
-          onTap: (int index) {
-            print('Botão $index pressionado!');
-          },
         ),
-      ),
-    );
-  }
+      ));
+
+  runApp(app);
 }
