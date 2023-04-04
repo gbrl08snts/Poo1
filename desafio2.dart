@@ -2,39 +2,53 @@ import 'package:flutter/material.dart';
 
 void main() {
   MaterialApp app = MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(primarySwatch: Colors.orange),
       home: Scaffold(
         appBar: AppBar(title: Text("Meu app")),
         body: Center(
             child: Column(children: [
           Text(
             "Apenas começando...",
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green),
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.green,
+            ),
           ),
           Text(
-            "No meio, mas agora em negrito!",
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+            "No meio...",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.blue,
+            ),
           ),
           Text(
             "Terminando...",
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
-          )
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.red,
+            ),
+          ),
         ])),
-        bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Colors.green,
-          unselectedItemColor: Colors.green,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: "Página inicial",
+        bottomNavigationBar: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Expanded(
+              child: IconButton(
+                icon: Icon(Icons.home),
+                onPressed: () {},
+              ),
             ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.search),
-              label: "Buscar",
+            Expanded(
+              child: IconButton(
+                icon: Icon(Icons.settings),
+                onPressed: () {},
+              ),
             ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: "Perfil",
+            Expanded(
+              child: IconButton(
+                icon: Icon(Icons.person),
+                onPressed: () {},
+              ),
             ),
           ],
         ),
