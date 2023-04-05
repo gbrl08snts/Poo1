@@ -4,7 +4,11 @@ void main() {
   MaterialApp app = MaterialApp(
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
-        textTheme: TextTheme(bodyText2: TextStyle(fontFamily: 'Montserrat')),
+        textTheme: TextTheme(
+          bodyText2: TextStyle(fontFamily: 'Montserrat'),
+          headline6: TextStyle(fontFamily: 'Montserrat', fontSize: 24),
+          button: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
+        ),
       ),
       home: Scaffold(
         appBar: AppBar(title: Text("Meu app")),
