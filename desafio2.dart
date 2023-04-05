@@ -7,21 +7,50 @@ void main() {
         textTheme: TextTheme(
           bodyText2: TextStyle(fontFamily: 'Montserrat'),
           headline6: TextStyle(fontFamily: 'Montserrat', fontSize: 24),
-          button: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
+          button:
+              TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold),
         ),
       ),
       home: Scaffold(
         appBar: AppBar(title: Text("Meu app")),
         body: Center(
             child: Column(children: [
-          Text("Apenas começando...",
-              style:
-                  TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
-          Text("No meio...",
-              style:
-                  TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
-          Text("Terminando...",
-              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red))
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              IconButton(
+                icon: Icon(Icons.image),
+                onPressed: () {},
+              ),
+              Text("Apenas começando...",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold, color: Colors.green)),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              IconButton(
+                icon: Icon(Icons.image),
+                onPressed: () {},
+              ),
+              Text("No meio...",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold, color: Colors.blue)),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              IconButton(
+                icon: Icon(Icons.image),
+                onPressed: () {},
+              ),
+              Text("Terminando...",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold, color: Colors.red)),
+            ],
+          ),
         ])),
         bottomNavigationBar: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -50,4 +79,3 @@ void main() {
 
   runApp(app);
 }
-
