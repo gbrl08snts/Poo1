@@ -1,2 +1,2 @@
 # Poo1
-Repositório de exercícios das aulas de Programação Orientada a Objetos 1.
+Nessa branch temos dois arquivos dart, um chamado part1.dart e outro chamado part2.dart, com as resoluções dos exercícios.
