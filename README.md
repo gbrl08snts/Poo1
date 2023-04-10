@@ -1,2 +1,2 @@
 # Poo1
-Nessa branch temos dois arquivos dart, um chamado part1.dart e outro chamado part2.dart, com as resoluções dos exercícios.
+Nessa branch temos um arquivo dart com a resolução da receita 2.
