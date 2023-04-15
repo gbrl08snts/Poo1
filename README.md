@@ -1,4 +1,4 @@
-# receita2
+# Receita 2
 
 A new Flutter project.
 
