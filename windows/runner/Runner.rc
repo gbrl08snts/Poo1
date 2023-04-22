@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "receita3_desafio4" "\0"
+            VALUE "FileDescription", "receita4tarefa5" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "receita3_desafio4" "\0"
+            VALUE "InternalName", "receita4tarefa5" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "receita3_desafio4.exe" "\0"
-            VALUE "ProductName", "receita3_desafio4" "\0"
+            VALUE "OriginalFilename", "receita4tarefa5.exe" "\0"
+            VALUE "ProductName", "receita4tarefa5" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
