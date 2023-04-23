@@ -1,6 +1,6 @@
 {
-    "name": "desafio2",
-    "short_name": "desafio2",
+    "name": "formulario",
+    "short_name": "formulario",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
